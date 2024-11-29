@@ -1,6 +1,6 @@
 const lib = require("../lib")
 
-describe('absolute -', () => {
+describe('absolute ', () => {
     it('should return a positive number if number is positive ', () => {
         const result = lib.absolute(1)
         expect(result).toBe(1)
@@ -20,5 +20,20 @@ describe('greet', () => {
         const result = lib.greet('Fisayo');
         expect(result).toMatch(/Fisayo/) // toMatch() method matches using regular expressions
         expect(result).toContain('Fisayo') // toContain() method checks if string is contained in the result
+    })
+})
+
+describe('getting countries', () => {
+    it('check for particular country', () => {
+        const result = lib.getCountries()
+
+        // Too General
+        // expect(result).toBeDefined()
+
+        // Too specific
+        // expect(result.length).toBe(6)
+
+        // Proper way
+        expect(result).toContain('SOUTH AFRICA')
     })
 })

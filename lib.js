@@ -5,3 +5,7 @@ module.exports.absolute = function(number) {
 module.exports.greet = function (name) {
     return `Hello, ${name}`
 }
+
+module.exports.getCountries = function () {
+    return ['FRANCE','NIGERIA','SOUTH AFRICA','CHINA','JAPAN','GREAT BRITAIN']
+}
