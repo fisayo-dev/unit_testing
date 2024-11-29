@@ -4,7 +4,7 @@
   "description": "Unit testing folder",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Fisayo Obadina",
   "license": "ISC",
