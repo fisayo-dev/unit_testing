@@ -1,7 +1,5 @@
-const absolute = (number) => {
-    if (number < 0) return -number
+module.exports.absolute = function(number) {
     if (number > 0) return number
+    if (number < 0) return -number
     return 0;
 }
-
-export {absolute}
