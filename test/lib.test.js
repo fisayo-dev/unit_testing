@@ -14,3 +14,11 @@ describe('absolute -', () => {
         expect(result).toBe(0)
     })
 })
+
+describe('greet', () => {
+    it("should contain the person's name", () => {
+        const result = lib.greet('Fisayo');
+        expect(result).toMatch(/Fisayo/) // toMatch() method matches using regular expressions
+        expect(result).toContain('Fisayo') // toContain() method checks if string is contained in the result
+    })
+})
