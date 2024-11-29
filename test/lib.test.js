@@ -1,3 +1,5 @@
-test('Our first test', () => {
-    console.log('I have done our first test')
+import { absolute } from "../lib.js"
+test('absolute - should return a positiove number if number is positive ', () => {
+    const result = absolute(1)
+    expect(result).toBeGreaterThanOrEqual(0)
 })
