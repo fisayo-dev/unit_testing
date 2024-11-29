@@ -3,6 +3,5 @@ module.exports.absolute = function(number) {
 }
 
 module.exports.greet = function (name) {
-    const msg = `Hello, ${name}`
-    return msg;
+    return `Hello, ${name}`
 }
