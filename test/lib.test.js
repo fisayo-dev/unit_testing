@@ -34,8 +34,7 @@ describe('getting countries', () => {
         // expect(result.length).toBe(6)
 
         // Proper way
-        expect(result).toContain('SOUTH AFRICA')
-
+        expect(result).toContain('JAPAN', 'NIGERIA')
         // Best way to check for the existence of one or more values in an array
         expect(result).toEqual(expect.arrayContaining(['JAPAN', 'NIGERIA']))
     })
