@@ -39,3 +39,10 @@ describe('getting countries', () => {
         expect(result).toEqual(expect.arrayContaining(['JAPAN', 'NIGERIA']))
     })
 })
+
+describe('getting quiz', () => {
+    it('get a particular quiz with a particular id', () => {
+        const result = lib.getQuiz(2)
+        expect(result).toMatchObject({id:2, author:'Fisayo'})
+    })
+})

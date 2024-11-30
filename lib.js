@@ -9,3 +9,7 @@ module.exports.greet = function (name) {
 module.exports.getCountries = function () {
     return ['FRANCE','NIGERIA','SOUTH AFRICA','CHINA','JAPAN','GREAT BRITAIN']
 }
+
+module.exports.getQuiz = function (quiz_id) {
+    return {id: quiz_id, author:'Fisayo', title:'Simplified IQ Test'}
+} 
