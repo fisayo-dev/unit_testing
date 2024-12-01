@@ -68,4 +68,20 @@ describe('fizzbuzz test', () => {
         const result = lib.fizzBuzz(2)
         expect(typeof(result)).toBe('number')
     })
+    it('input should be divisible by 3', () => {
+        const result = lib.fizzBuzz(3)
+        expect(result).toBe('Fizz')
+    })
+    it('input should be divisible by 5', () => {
+        const result = lib.fizzBuzz(5)
+        expect(result).toBe('Buzz')
+    })
+    it('input is divisible by 3 and 5', () => {
+        const result = lib.fizzBuzz(15)
+        expect(result).toBe('FizzBuzz')
+    })
+    it('input is neither divisble by 3 or 5', () => {
+        const result = lib.fizzBuzz(17)
+        expect(result).toBe(17)
+    })
 })
