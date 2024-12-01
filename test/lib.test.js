@@ -80,7 +80,7 @@ describe('fizzbuzz test', () => {
         const result = lib.fizzBuzz(15)
         expect(result).toBe('FizzBuzz')
     })
-    it('input is neither divisble by 3 or 5', () => {
+    it('input is neither divisble by 3 nor 5', () => {
         const result = lib.fizzBuzz(17)
         expect(result).toBe(17)
     })
