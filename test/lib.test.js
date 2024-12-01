@@ -62,3 +62,10 @@ describe('register user', () => {
         expect(result.id).toBeGreaterThan(0)
     })
 })
+
+describe('fizzbuzz test', () => {
+    it('input should be a number', () => {
+        const result = lib.fizzBuzz(2)
+        expect(typeof(result)).toBe('number')
+    })
+})
