@@ -4,7 +4,7 @@
   "description": "Unit testing folder",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll"
   },
   "author": "Fisayo Obadina",
   "license": "ISC",

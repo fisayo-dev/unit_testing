@@ -52,7 +52,7 @@ describe('register user', () => {
         const args = [null, NaN, undefined, '', 0, false]
         args.forEach(arg => {
             expect(() => {
-                lib.registeUser(arg)
+                lib.registerUser(arg)
             }).toThrow()
         })
     })
