@@ -13,3 +13,8 @@ module.exports.getCountries = function () {
 module.exports.getQuiz = function (quiz_id) {
     return {id: quiz_id, author:'Fisayo', title:'Simplified IQ Test'}
 } 
+
+module.exports.registeUser = function (username) {
+    if (!username) throw new Error('')
+    return {id:new Date.getDay(), username:username}
+}

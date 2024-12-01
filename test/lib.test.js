@@ -46,3 +46,19 @@ describe('getting quiz', () => {
         expect(result).toMatchObject({id:2, author:'Fisayo'})
     })
 })
+
+describe('register user', () => {
+    it('username validity falsy', () => {
+        const args = [null, NaN, undefined, '', 0, false]
+        args.forEach(arg => {
+            expect(() => {
+                lib.registeUser(arg)
+            }).toThrow()
+        })
+    })
+    it('username validity truthy', () => {
+        const result = lib.registeUser('Fisayo')
+        expect(result).toHaveProperty('username', 'Fisayo')
+        expect(result.id).toBeGreaterThan(0)
+    })
+})
